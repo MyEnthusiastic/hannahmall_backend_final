@@ -1,0 +1,4 @@
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+###  com.hannah.hannahmall.coupon.config.hannahmallsessionConfiguration,\
+### com.hannah.hannahmall.common.config.MyMetaObjectHandlerConfiguration
+###

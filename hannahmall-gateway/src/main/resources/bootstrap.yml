@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: hannahmall-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.56.10:8848
+        namespace: 93ab9b83-cca4-48b5-abad-8a46f12ac0ba
+        ext-config:
+          - dataId: redis.yml
+        file-extension: yml
+      discovery:
+        namespace: 93ab9b83-cca4-48b5-abad-8a46f12ac0ba
+        server-addr: 192.168.56.10:8848
+

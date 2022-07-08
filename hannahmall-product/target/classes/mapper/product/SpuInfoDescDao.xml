@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hannah.hannahmall.product.dao.SpuInfoDescDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.hannah.hannahmall.product.entity.SpuInfoDescEntity" id="spuInfoDescMap">
+        <result property="spuId" column="spu_id"/>
+        <result property="decript" column="decript"/>
+    </resultMap>
+    <insert id="saveEntity">
+        INSERT INTO pms_spu_info_desc  (spu_id, decript )  VALUES  ( #{spuInfoDescEntity.spuId},#{spuInfoDescEntity.decript} )
+    </insert>
+
+
+</mapper>

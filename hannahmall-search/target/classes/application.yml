@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: hannahmall-search
+  cloud:
+    sentinel:
+      transport:
+        port: 8727
+        dashboard: 192.168.56.10:8090
+  elasticsearch:
+    hostname: 192.168.56.10
+    port: 9200
+    scheme: http
+  redis:
+    database: 0
+    port: 6379
+    host: 192.168.56.10
+    password: root
+  session:
+    store-type: redis
+server:
+  port: 12000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
